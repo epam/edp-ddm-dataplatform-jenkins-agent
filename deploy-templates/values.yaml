@@ -1,0 +1,6 @@
+edpProject: test
+dockerProxyRegistry: registry
+image:
+  name: dataplatform-jenkins-agent
+  version: 1
+agentName: dataplatform-jenkins-agent

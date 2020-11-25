@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.epam.digital.data.platform</groupId>
+    <artifactId>artifacts-downloader</artifactId>
+    <version>1.8.0</version>
+    <name>artifacts-downloader</name>
+    <description>Download artifacts from nexus repositories</description>
+
+    <properties>
+        <!-- Versions for installer -->
+        <liquibase.ext.schema.version>1.5.0-SNAPSHOT.84</liquibase.ext.schema.version>
+        <service.generation.utility.version>1.8.0.12</service.generation.utility.version>
+        <liquibase.ddm.ext.version>1.8.0.3</liquibase.ddm.ext.version>
+        <report.publisher.version>1.7.0.1</report.publisher.version>
+        <notification.template.publisher.version>1.7.0.2</notification.template.publisher.version>
+        <camunda.auth.cli.version>1.6.0.4</camunda.auth.cli.version>
+        <registry.regulations.validator.version>1.8.0.2</registry.regulations.validator.version>
+        <geoserver.publisher.version>1.8.0.2</geoserver.publisher.version>
+        <form.data.storage.migration.cli.version>1.7.0-SNAPSHOT</form.data.storage.migration.cli.version>
+        <log4j.version>2.17.0</log4j.version>
+        <jackson-databind.version>2.9.10.4</jackson-databind.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+          <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-databind.version}</version>
+          </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.epam.digital.data.platform</groupId>
+            <artifactId>service-generation-utility</artifactId>
+            <version>${service.generation.utility.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+            <version>4.5.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.epam.digital.data.platform</groupId>
+            <artifactId>liquibase-ddm-ext</artifactId>
+            <version>${liquibase.ddm.ext.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.epam.digital.data.platform</groupId>
+            <artifactId>liquibaserepo</artifactId>
+            <version>1.5.0-20220419.160156-16</version>
+            <type>tar.gz</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.epam.digital.data.platform</groupId>
+            <artifactId>report-publisher</artifactId>
+            <version>${report.publisher.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.epam.digital.data.platform</groupId>
+            <artifactId>camunda-auth-cli</artifactId>
+            <version>${camunda.auth.cli.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.epam.digital.data.platform</groupId>
+            <artifactId>registry-regulations-validator-cli</artifactId>
+            <version>${registry.regulations.validator.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.epam.digital.data.platform</groupId>
+            <artifactId>notification-template-publisher</artifactId>
+            <version>${notification.template.publisher.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.epam.digital.data.platform</groupId>
+            <artifactId>form-data-storage-migration-cli</artifactId>
+            <version>${form.data.storage.migration.cli.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.epam.digital.data.platform</groupId>
+            <artifactId>geoserver-publisher</artifactId>
+            <version>${geoserver.publisher.version}</version>
+        </dependency>
+
+    </dependencies>
+</project>
