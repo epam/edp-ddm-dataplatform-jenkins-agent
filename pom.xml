@@ -34,7 +34,7 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>report-publisher</artifactId>
-            <version>1.3.0-20210729.135637-16</version>
+            <version>1.4.0-20210805.141424-2</version>
         </dependency>
 
         <dependency>
