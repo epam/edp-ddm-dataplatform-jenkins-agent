@@ -14,7 +14,7 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>service-generation-utility</artifactId>
-            <version>1.4.0-20210812.135309-8</version>
+            <version>1.4.0-20210813.135853-11</version>
         </dependency>
 
         <dependency>
