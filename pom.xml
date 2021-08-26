@@ -49,5 +49,11 @@
             <version>1.2.0-20210624.132457-1</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.epam.digital.data.platform</groupId>
+            <artifactId>registry-regulations-validator-cli</artifactId>
+            <version>1.4.0-20210826.084444-1</version>
+        </dependency>
+
     </dependencies>
 </project>
