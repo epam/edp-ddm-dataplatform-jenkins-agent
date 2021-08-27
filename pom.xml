@@ -14,20 +14,20 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>service-generation-utility</artifactId>
-            <version>1.4.0-20210826.21330-20</version>
+            <version>1.4.0-20210826.121330-20</version>
         </dependency>
 
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>liquibase-ddm-ext</artifactId>
-            <version>1.4.0-20210812.134649-2</version>
+            <version>1.4.0-20210826.155719-7</version>
         </dependency>
 
         <dependency>
             <groupId>ua.gov.mdtu.ddm.dataplatform</groupId>
             <artifactId>liquibaserepo</artifactId>
             <version>1.4.1</version>
-            <classifier>SNAPSHOT.21</classifier>
+            <classifier>SNAPSHOT.41</classifier>
             <type>tar.gz</type>
         </dependency>
 
