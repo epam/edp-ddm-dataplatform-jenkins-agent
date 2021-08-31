@@ -27,7 +27,7 @@
             <groupId>ua.gov.mdtu.ddm.dataplatform</groupId>
             <artifactId>liquibaserepo</artifactId>
             <version>1.4.1</version>
-            <classifier>SNAPSHOT.41</classifier>
+            <classifier>SNAPSHOT.49</classifier>
             <type>tar.gz</type>
         </dependency>
 
