@@ -52,7 +52,7 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>registry-regulations-validator-cli</artifactId>
-            <version>1.4.0-20210830.063220-5</version>
+            <version>1.4.0-20210906.071615-10</version>
         </dependency>
 
     </dependencies>
