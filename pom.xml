@@ -24,10 +24,9 @@
         </dependency>
 
         <dependency>
-            <groupId>ua.gov.mdtu.ddm.dataplatform</groupId>
+            <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>liquibaserepo</artifactId>
-            <version>1.4.1</version>
-            <classifier>SNAPSHOT.49</classifier>
+            <version>1.4.1-20210910.084055-2</version>
             <type>tar.gz</type>
         </dependency>
 
