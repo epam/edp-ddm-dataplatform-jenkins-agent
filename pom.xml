@@ -20,7 +20,7 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>liquibase-ddm-ext</artifactId>
-            <version>1.4.0-20210909.111603-13</version>
+            <version>1.4.0-20210921.125505-16</version>
         </dependency>
 
         <dependency>
