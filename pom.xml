@@ -9,12 +9,18 @@
     <name>artifacts-downloader</name>
     <description>Download artifacts from nexus repositories</description>
 
+    <properties>
+        <!-- Versions for installer -->
+        <liquibase.ext.schema.version>1.4.0-RC.1</liquibase.ext.schema.version>
+        <service.generation.utility.version>1.5.0-SNAPSHOT.4</service.generation.utility.version>
+    </properties>
+
     <dependencies>
 
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>service-generation-utility</artifactId>
-            <version>1.5.0-20210923.092057-2</version>
+            <version>${service.generation.utility.version>}</version>
         </dependency>
 
         <dependency>
