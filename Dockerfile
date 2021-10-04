@@ -12,11 +12,12 @@ RUN ln -s --force /usr/local/bin/helm /sbin/ && \
     ./get_helm.sh
 COPY pom.xml $HOME/pom.xml
 COPY settings.xml $HOME/settings.xml
-RUN mkdir $HOME/liquibase && mkdir $HOME/liquibase/lib && mkdir $HOME/service-generation-utility && mkdir $HOME/report-publisher && mkdir $HOME/registry-regulations-validator && mkdir $HOME/registry-regulations-validator-cli && mkdir $HOME/camunda-auth-cli && wget -O $HOME/liquibase/liquibase.jar "https://github.com/liquibase/liquibase/releases/download/v4.2.1/liquibase-4.2.1.jar" && \
+RUN mkdir $HOME/liquibase && mkdir $HOME/liquibase/lib && mkdir $HOME/service-generation-utility && mkdir $HOME/report-publisher && mkdir $HOME/registry-regulations-validator && mkdir $HOME/registry-regulations-validator-cli && mkdir $HOME/camunda-auth-cli && \
     mvn -f $HOME/pom.xml --settings $HOME/settings.xml -Dartifactory.baseUrl=http://nexus:8081 -Dartifactory.groupPath=edp-maven-group -Dartifactory.releasePath=edp-maven-releases -Dartifactory.snapshotsPath=edp-maven-snapshots dependency:copy-dependencies && \
     cp $HOME/target/dependency/liquibase-ddm-ext*.jar $HOME/liquibase/lib/liquibase-ddm-ext.jar && \
     cp $HOME/target/dependency/liquibaserepo*.tar.gz /liquibaserepo-0.0.1.tar.gz && \
     tar -xf /liquibaserepo-0.0.1.tar.gz -C / && \
+    cp $HOME/target/dependency/liquibase*.jar $HOME/liquibase/liquibase.jar && \
     cp $HOME/target/dependency/service-generation-utility*.jar $HOME/service-generation-utility/service-generation-utility.jar && \
     cp $HOME/target/dependency/report-publisher*.jar $HOME/report-publisher/report-publisher.jar && \
     mv $HOME/target/dependency/registry-regulations-validator-cli*.jar $HOME/registry-regulations-validator-cli/registry-regulations-validator-cli.jar && \
