@@ -17,7 +17,7 @@ RUN mkdir $HOME/liquibase && mkdir $HOME/liquibase/lib && mkdir $HOME/service-ge
     cp $HOME/target/dependency/liquibase-ddm-ext*.jar $HOME/liquibase/lib/liquibase-ddm-ext.jar && \
     cp $HOME/target/dependency/liquibaserepo*.tar.gz /liquibaserepo-0.0.1.tar.gz && \
     tar -xf /liquibaserepo-0.0.1.tar.gz -C / && \
-    cp $HOME/target/dependency/liquibase*.jar $HOME/liquibase/liquibase.jar && \
+    cp $HOME/target/dependency/liquibase-core-*.jar $HOME/liquibase/liquibase.jar && \
     cp $HOME/target/dependency/service-generation-utility*.jar $HOME/service-generation-utility/service-generation-utility.jar && \
     cp $HOME/target/dependency/report-publisher*.jar $HOME/report-publisher/report-publisher.jar && \
     mv $HOME/target/dependency/registry-regulations-validator-cli*.jar $HOME/registry-regulations-validator-cli/registry-regulations-validator-cli.jar && \
