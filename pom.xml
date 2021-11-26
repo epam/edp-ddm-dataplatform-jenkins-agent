@@ -38,7 +38,7 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>liquibaserepo</artifactId>
-            <version>1.5.0-20211115.140547-8</version>
+            <version>1.5.0-20211126.074822-11</version>
             <type>tar.gz</type>
         </dependency>
 
