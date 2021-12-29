@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ua.gov.mdtu.ddm.dataplatform</groupId>
+    <groupId>com.epam.digital.data.platform</groupId>
     <artifactId>artifacts-downloader</artifactId>
-    <version>1.1.1-SNAPSHOT</version>
+    <version>1.5.0-SNAPSHOT</version>
     <name>artifacts-downloader</name>
     <description>Download artifacts from nexus repositories</description>
 
