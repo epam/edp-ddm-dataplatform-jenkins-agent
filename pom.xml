@@ -57,13 +57,13 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>camunda-auth-cli</artifactId>
-            <version>1.2.0-20210624.132457-1</version>
+            <version>1.5.0-20211229.134709-1</version>
         </dependency>
 
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>registry-regulations-validator-cli</artifactId>
-            <version>1.5.1-20211203.124343-1</version>
+            <version>1.5.1-20211221.110024-2</version>
         </dependency>
 
     </dependencies>
