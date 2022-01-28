@@ -47,6 +47,10 @@ spec:
               <key>JAVA_TOOL_OPTIONS</key>
               <value>-XX:+UnlockExperimentalVMOptions -Dsun.zip.disableMemoryMapping=true</value>
             </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>AGENT_IMAGE_VERSION</key>
+              <value>{{ .Values.image.version }}</value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
           </envVars>
           <ports/>
         </org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
