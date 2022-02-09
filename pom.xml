@@ -11,7 +11,7 @@
 
     <properties>
         <!-- Versions for installer -->
-        <liquibase.ext.schema.version>1.5.0-SNAPSHOT.71</liquibase.ext.schema.version>
+        <liquibase.ext.schema.version>1.5.0-SNAPSHOT.72</liquibase.ext.schema.version>
         <service.generation.utility.version>1.5.1-SNAPSHOT.120</service.generation.utility.version>
     </properties>
 
@@ -32,7 +32,7 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>liquibase-ddm-ext</artifactId>
-            <version>1.5.0-20220208.105102-46</version>
+            <version>1.5.0-20220209.104146-47</version>
         </dependency>
 
         <dependency>
