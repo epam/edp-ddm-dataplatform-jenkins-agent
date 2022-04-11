@@ -12,7 +12,7 @@
     <properties>
         <!-- Versions for installer -->
         <liquibase.ext.schema.version>1.5.0-SNAPSHOT.74</liquibase.ext.schema.version>
-        <service.generation.utility.version>1.5.1-SNAPSHOT.134</service.generation.utility.version>
+        <service.generation.utility.version>1.5.1-SNAPSHOT.135</service.generation.utility.version>
     </properties>
 
     <dependencies>
@@ -57,7 +57,7 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>camunda-auth-cli</artifactId>
-            <version>1.5.1-20220330.085519-3</version>
+            <version>1.5.1-20220411.093858-4</version>
         </dependency>
 
         <dependency>
