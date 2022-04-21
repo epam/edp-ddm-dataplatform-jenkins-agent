@@ -38,7 +38,7 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>liquibaserepo</artifactId>
-            <version>1.5.0-20211201.115327-13</version>
+            <version>1.5.0-20220419.160156-16</version>
             <type>tar.gz</type>
         </dependency>
 
@@ -51,7 +51,7 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>registry-regulations-validator</artifactId>
-            <version>1.4.0-20220315.163242-10</version>
+            <version>1.4.0-20220412.140418-11</version>
         </dependency>
 
         <dependency>
@@ -63,7 +63,7 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>registry-regulations-validator-cli</artifactId>
-            <version>1.5.1-20220413.075245-20</version>
+            <version>1.5.0-20220421.114838-1</version>
         </dependency>
 
     </dependencies>
