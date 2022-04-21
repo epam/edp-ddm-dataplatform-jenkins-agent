@@ -50,12 +50,6 @@
 
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
-            <artifactId>registry-regulations-validator</artifactId>
-            <version>1.4.0-20220412.140418-11</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>camunda-auth-cli</artifactId>
             <version>1.5.1-20220411.093858-4</version>
         </dependency>
