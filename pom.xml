@@ -5,14 +5,18 @@
 
     <groupId>com.epam.digital.data.platform</groupId>
     <artifactId>artifacts-downloader</artifactId>
-    <version>1.5.0-SNAPSHOT</version>
+    <version>1.6.0</version>
     <name>artifacts-downloader</name>
     <description>Download artifacts from nexus repositories</description>
 
     <properties>
         <!-- Versions for installer -->
         <liquibase.ext.schema.version>1.5.0-SNAPSHOT.74</liquibase.ext.schema.version>
-        <service.generation.utility.version>1.5.1-SNAPSHOT.136</service.generation.utility.version>
+        <service.generation.utility.version>1.6.0.4</service.generation.utility.version>
+        <liquibase.ddm.ext.version>1.6.0.1</liquibase.ddm.ext.version>
+        <report.publisher.version>1.6.0.2</report.publisher.version>
+        <camunda.auth.cli.version>1.6.0.4</camunda.auth.cli.version>
+        <registry.regulations.validator.version>1.6.0.2</registry.regulations.validator.version>
     </properties>
 
     <dependencies>
@@ -32,7 +36,7 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>liquibase-ddm-ext</artifactId>
-            <version>1.5.0-20220412.134034-56</version>
+            <version>${liquibase.ddm.ext.version}</version>
         </dependency>
 
         <dependency>
@@ -45,19 +49,19 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>report-publisher</artifactId>
-            <version>1.5.0-20220406.075213-18</version>
+            <version>${report.publisher.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>camunda-auth-cli</artifactId>
-            <version>1.5.1-20220411.093858-4</version>
+            <version>${camunda.auth.cli.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>registry-regulations-validator-cli</artifactId>
-            <version>1.6.0.2</version>
+            <version>${registry.regulations.validator.version}</version>
         </dependency>
 
     </dependencies>
