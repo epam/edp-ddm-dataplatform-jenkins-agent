@@ -14,7 +14,7 @@
         <liquibase.ext.schema.version>1.5.0-SNAPSHOT.74</liquibase.ext.schema.version>
         <service.generation.utility.version>1.6.0.4</service.generation.utility.version>
         <liquibase.ddm.ext.version>1.6.0.2</liquibase.ddm.ext.version>
-        <report.publisher.version>1.6.0.3</report.publisher.version>
+        <report.publisher.version>1.6.0.4</report.publisher.version>
         <camunda.auth.cli.version>1.6.0.4</camunda.auth.cli.version>
         <registry.regulations.validator.version>1.6.0.3</registry.regulations.validator.version>
     </properties>
