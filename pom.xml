@@ -5,14 +5,14 @@
 
     <groupId>com.epam.digital.data.platform</groupId>
     <artifactId>artifacts-downloader</artifactId>
-    <version>1.6.0</version>
+    <version>1.7.0</version>
     <name>artifacts-downloader</name>
     <description>Download artifacts from nexus repositories</description>
 
     <properties>
         <!-- Versions for installer -->
         <liquibase.ext.schema.version>1.5.0-SNAPSHOT.74</liquibase.ext.schema.version>
-        <service.generation.utility.version>1.6.0.8</service.generation.utility.version>
+        <service.generation.utility.version>1.6.0.9</service.generation.utility.version>
         <liquibase.ddm.ext.version>1.6.0.3</liquibase.ddm.ext.version>
         <report.publisher.version>1.6.0.5</report.publisher.version>
         <camunda.auth.cli.version>1.6.0.4</camunda.auth.cli.version>
