@@ -11,9 +11,9 @@
 
     <properties>
         <!-- Versions for installer -->
-        <liquibase.ext.schema.version>1.5.0-SNAPSHOT.74</liquibase.ext.schema.version>
-        <service.generation.utility.version>1.6.0.9</service.generation.utility.version>
-        <liquibase.ddm.ext.version>1.6.0.3</liquibase.ddm.ext.version>
+        <liquibase.ext.schema.version>1.5.0-SNAPSHOT.79</liquibase.ext.schema.version>
+        <service.generation.utility.version>1.7.0.1</service.generation.utility.version>
+        <liquibase.ddm.ext.version>1.7.0.1</liquibase.ddm.ext.version>
         <report.publisher.version>1.6.0.5</report.publisher.version>
         <camunda.auth.cli.version>1.6.0.4</camunda.auth.cli.version>
         <registry.regulations.validator.version>1.6.0.3</registry.regulations.validator.version>
