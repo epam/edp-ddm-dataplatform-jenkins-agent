@@ -13,7 +13,7 @@ RUN ln -s --force /usr/local/bin/helm /sbin/ && \
 COPY pom.xml $HOME/pom.xml
 COPY settings.xml $HOME/settings.xml
 RUN mkdir $HOME/liquibase && mkdir $HOME/liquibase/lib && mkdir $HOME/service-generation-utility && \
-    mkdir $HOME/report-publisher && mkdir $HOME/notification-template-publisher && \
+    mkdir $HOME/report-publisher && mkdir $HOME/notification-template-publisher && mkdir $HOME/geoserver-publisher \
     mkdir $HOME/registry-regulations-validator-cli && mkdir $HOME/camunda-auth-cli && mkdir $HOME/form-data-storage-migration-cli && \
     mvn -f $HOME/pom.xml --settings $HOME/settings.xml -Dartifactory.baseUrl=http://nexus:8081 -Dartifactory.groupPath=edp-maven-group -Dartifactory.releasePath=edp-maven-releases -Dartifactory.snapshotsPath=edp-maven-snapshots dependency:copy-dependencies && \
     cp $HOME/target/dependency/liquibase-ddm-ext*.jar $HOME/liquibase/lib/liquibase-ddm-ext.jar && \
@@ -25,6 +25,7 @@ RUN mkdir $HOME/liquibase && mkdir $HOME/liquibase/lib && mkdir $HOME/service-ge
     cp $HOME/target/dependency/notification-template-publisher*.jar $HOME/notification-template-publisher/notification-template-publisher.jar && \
     mv $HOME/target/dependency/registry-regulations-validator-cli*.jar $HOME/registry-regulations-validator-cli/registry-regulations-validator-cli.jar && \
     cp $HOME/target/dependency/camunda-auth-cli*.jar $HOME/camunda-auth-cli/camunda-auth-cli.jar && \
+    cp $HOME/target/dependency/geoserver-publisher*.jar $HOME/geoserver-publisher/geoserver-publisher.jar && \
     cp $HOME/target/dependency/form-data-storage-migration-cli*.jar $HOME/form-data-storage-migration-cli/form-data-storage-migration-cli.jar && \
     wget -O $HOME/liquibase/lib/postgresql-42.2.16.jar "https://jdbc.postgresql.org/download/postgresql-42.2.16.jar"
 RUN chown -R "1001:0" "$HOME" && \
