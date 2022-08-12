@@ -18,6 +18,7 @@
         <notification.template.publisher.version>1.7.0.2</notification.template.publisher.version>
         <camunda.auth.cli.version>1.6.0.4</camunda.auth.cli.version>
         <registry.regulations.validator.version>1.8.0.1</registry.regulations.validator.version>
+        <form.data.storage.migration.cli.version>1.7.0-SNAPSHOT</form.data.storage.migration.cli.version>
         <log4j.version>2.17.0</log4j.version>
     </properties>
 
@@ -85,6 +86,12 @@
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>notification-template-publisher</artifactId>
             <version>${notification.template.publisher.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.epam.digital.data.platform</groupId>
+            <artifactId>form-data-storage-migration-cli</artifactId>
+            <version>${form.data.storage.migration.cli.version}</version>
         </dependency>
 
     </dependencies>
