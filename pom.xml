@@ -11,13 +11,13 @@
 
     <properties>
         <!-- Versions for installer -->
-        <liquibase.ext.schema.version>1.5.0-SNAPSHOT.79</liquibase.ext.schema.version>
-        <service.generation.utility.version>1.8.0.11</service.generation.utility.version>
-        <liquibase.ddm.ext.version>1.8.0.2</liquibase.ddm.ext.version>
+        <liquibase.ext.schema.version>1.5.0-SNAPSHOT.84</liquibase.ext.schema.version>
+        <service.generation.utility.version>1.8.0.12</service.generation.utility.version>
+        <liquibase.ddm.ext.version>1.8.0.3</liquibase.ddm.ext.version>
         <report.publisher.version>1.7.0.1</report.publisher.version>
         <notification.template.publisher.version>1.7.0.2</notification.template.publisher.version>
         <camunda.auth.cli.version>1.6.0.4</camunda.auth.cli.version>
-        <registry.regulations.validator.version>1.8.0.1</registry.regulations.validator.version>
+        <registry.regulations.validator.version>1.8.0.2</registry.regulations.validator.version>
         <geoserver.publisher.version>1.8.0.2</geoserver.publisher.version>
         <form.data.storage.migration.cli.version>1.7.0-SNAPSHOT</form.data.storage.migration.cli.version>
         <log4j.version>2.17.0</log4j.version>
