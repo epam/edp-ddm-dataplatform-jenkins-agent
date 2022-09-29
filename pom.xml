@@ -5,7 +5,7 @@
 
     <groupId>com.epam.digital.data.platform</groupId>
     <artifactId>artifacts-downloader</artifactId>
-    <version>1.8.0</version>
+    <version>1.8.3</version>
     <name>artifacts-downloader</name>
     <description>Download artifacts from nexus repositories</description>
 
@@ -16,7 +16,7 @@
         <liquibase.ddm.ext.version>1.8.0.5</liquibase.ddm.ext.version>
         <report.publisher.version>1.7.0.4</report.publisher.version>
         <notification.template.publisher.version>1.7.0.2</notification.template.publisher.version>
-        <camunda.auth.cli.version>1.6.0.4</camunda.auth.cli.version>
+        <camunda.auth.cli.version>1.8.0.4</camunda.auth.cli.version>
         <registry.regulations.validator.version>1.8.0.5</registry.regulations.validator.version>
         <geoserver.publisher.version>1.8.0.2</geoserver.publisher.version>
         <form.data.storage.migration.cli.version>1.7.0-SNAPSHOT</form.data.storage.migration.cli.version>
