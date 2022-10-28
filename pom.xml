@@ -12,7 +12,7 @@
     <properties>
         <!-- Versions for installer -->
         <liquibase.ext.schema.version>1.5.0-SNAPSHOT.86</liquibase.ext.schema.version>
-        <service.generation.utility.version>1.8.0.24</service.generation.utility.version>
+        <service.generation.utility.version>1.8.0.26</service.generation.utility.version>
         <liquibase.ddm.ext.version>1.8.0.7</liquibase.ddm.ext.version>
         <report.publisher.version>1.7.0.7</report.publisher.version>
         <notification.template.publisher.version>1.8.0.1</notification.template.publisher.version>
