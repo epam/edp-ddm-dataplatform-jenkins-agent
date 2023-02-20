@@ -27,7 +27,7 @@ RUN mkdir $HOME/liquibase && mkdir $HOME/liquibase/lib && mkdir $HOME/service-ge
     cp $HOME/target/dependency/camunda-auth-cli*.jar $HOME/camunda-auth-cli/camunda-auth-cli.jar && \
     cp $HOME/target/dependency/geoserver-publisher*.jar $HOME/geoserver-publisher/geoserver-publisher.jar && \
     cp $HOME/target/dependency/form-data-storage-migration-cli*.jar $HOME/form-data-storage-migration-cli/form-data-storage-migration-cli.jar && \
-    wget -O $HOME/liquibase/lib/postgresql-42.2.16.jar "https://jdbc.postgresql.org/download/postgresql-42.2.16.jar"
+    wget -O $HOME/liquibase/lib/postgresql-42.3.3.jar "https://jdbc.postgresql.org/download/postgresql-42.3.3.jar"
 RUN chown -R "1001:0" "$HOME" && \
     chmod -R "g+rw" "$HOME"
 USER 1001
