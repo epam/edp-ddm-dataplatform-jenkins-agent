@@ -73,7 +73,7 @@
         <dependency>
             <groupId>com.epam.digital.data.platform</groupId>
             <artifactId>liquibaserepo</artifactId>
-            <version>1.8.0.10</version>
+            <version>1.9.4.2</version>
             <type>tar.gz</type>
         </dependency>
 
