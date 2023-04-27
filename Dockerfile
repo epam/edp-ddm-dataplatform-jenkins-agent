@@ -15,7 +15,7 @@ COPY settings.xml $HOME/settings.xml
 RUN mkdir $HOME/liquibase && mkdir $HOME/liquibase/lib && mkdir $HOME/service-generation-utility && \
     mkdir $HOME/report-publisher && mkdir $HOME/notification-template-publisher && mkdir $HOME/geoserver-publisher \
     mkdir $HOME/registry-regulations-validator-cli && mkdir $HOME/camunda-auth-cli && mkdir $HOME/form-data-storage-migration-cli && \
-    mvn -f $HOME/pom.xml --settings $HOME/settings.xml -Dartifactory.baseUrl=http://nexus:8081 -Dartifactory.groupPath=edp-maven-group -Dartifactory.releasePath=edp-maven-releases -Dartifactory.snapshotsPath=edp-maven-snapshots dependency:copy-dependencies && \
+    mvn -f $HOME/pom.xml --settings $HOME/settings.xml -Dartifactory.baseUrl=http://nexus:8081/nexus -Dartifactory.groupPath=edp-maven-group -Dartifactory.releasePath=edp-maven-releases -Dartifactory.snapshotsPath=edp-maven-snapshots dependency:copy-dependencies && \
     cp $HOME/target/dependency/liquibase-ddm-ext*.jar $HOME/liquibase/lib/liquibase-ddm-ext.jar && \
     cp $HOME/target/dependency/liquibaserepo*.tar.gz /liquibaserepo-0.0.1.tar.gz && \
     tar -xf /liquibaserepo-0.0.1.tar.gz -C / && \
