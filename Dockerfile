@@ -3,17 +3,10 @@ FROM nexus-docker-registry.apps.cicd2.mdtu-ddm.projects.epam.com/epamedp/edp-jen
 USER root
 RUN yum update -y && yum install wget -y && yum install jq -y && rm -rf /var/lib/apt/lists/*
 ENV VERIFY_CHECKSUM=false
-ENV OC_BINARY_VERSION=4.12.0-0.okd-2023-04-16-041331
 
 RUN localedef --no-archive -c -i uk_UA -f UTF-8 uk_UA
 ENV LANG=uk_UA.UTF-8
 ENV LANGUAGE=uk_UA:uk
-
-ADD https://github.com/okd-project/okd/releases/download/${OC_BINARY_VERSION}/openshift-client-linux-${OC_BINARY_VERSION}.tar.gz openshift-client-linux-${OC_BINARY_VERSION}.tar.gz
-RUN tar -xf openshift-client-linux-${OC_BINARY_VERSION}.tar.gz \
-    && rm openshift-client-linux-${OC_BINARY_VERSION}.tar.gz \
-    && mv oc /usr/bin/oc \
-    && mv kubectl /usr/bin/kubectl
 
 RUN ln -s --force /usr/local/bin/helm /sbin/ && \
     curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 && \
