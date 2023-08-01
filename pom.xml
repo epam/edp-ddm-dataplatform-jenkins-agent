@@ -19,7 +19,7 @@
         <camunda.auth.cli.version>1.9.4.3</camunda.auth.cli.version>
         <registry.regulations.validator.version>1.9.0.8</registry.regulations.validator.version>
         <geoserver.publisher.version>1.8.0.11</geoserver.publisher.version>
-        <form.data.storage.migration.cli.version>1.8.0.1</form.data.storage.migration.cli.version>
+        <form.data.storage.migration.cli.version>1.8.0.3</form.data.storage.migration.cli.version>
         <log4j.version>2.17.0</log4j.version>
         <jackson-databind.version>2.13.4</jackson-databind.version>
         <snakeyaml.version>1.33</snakeyaml.version>
