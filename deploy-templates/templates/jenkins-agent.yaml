@@ -27,6 +27,10 @@ spec:
           <mountPath>/opt/caches/maven</mountPath>
           <memory>false</memory>
         </org.csanchez.jenkins.plugins.kubernetes.volumes.EmptyDirVolume>
+        <org.csanchez.jenkins.plugins.kubernetes.volumes.ConfigMapVolume>
+          <mountPath>/var/lib/business-process-modeller-extensions</mountPath>
+          <configMapName>business-process-modeler-element-templates</configMapName>
+        </org.csanchez.jenkins.plugins.kubernetes.volumes.ConfigMapVolume>
       </volumes>
       <containers>
         <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
