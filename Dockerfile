@@ -22,6 +22,9 @@ RUN mkdir $HOME/liquibase && mkdir $HOME/liquibase/lib && mkdir $HOME/service-ge
     cp $HOME/target/dependency/liquibaserepo*.tar.gz /liquibaserepo-0.0.1.tar.gz && \
     tar -xf /liquibaserepo-0.0.1.tar.gz -C / && \
     cp $HOME/target/dependency/liquibase-core-*.jar $HOME/liquibase/liquibase.jar && \
+    cp $HOME/target/dependency/jackson-databind-2*.jar $HOME/liquibase/lib/jackson-databind.jar && \
+    cp $HOME/target/dependency/jackson-core-*.jar $HOME/liquibase/lib/jackson-core.jar && \
+    cp $HOME/target/dependency/jackson-annotations-*.jar $HOME/liquibase/lib/jackson-annotations.jar && \
     cp $HOME/target/dependency/service-generation-utility*.jar $HOME/service-generation-utility/service-generation-utility.jar && \
     cp $HOME/target/dependency/report-publisher*.jar $HOME/report-publisher/report-publisher.jar && \
     cp $HOME/target/dependency/notification-template-publisher*.jar $HOME/notification-template-publisher/notification-template-publisher.jar && \
