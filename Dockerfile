@@ -1,6 +1,10 @@
 FROM nexus-docker-registry.apps.cicd2.mdtu-ddm.projects.epam.com/epamedp/edp-jenkins-maven-java11-agent:2.0.0
 
 USER root
+# update mirror list for centos7 (EOL has been reached)
+RUN sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/*.repo \
+    && sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/*.repo \
+    && sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/*.repo
 RUN yum update -y && yum install wget -y && yum install jq -y && rm -rf /var/lib/apt/lists/*
 ENV VERIFY_CHECKSUM=false
 ENV OC_BINARY_VERSION=4.12.0-0.okd-2023-04-16-041331
