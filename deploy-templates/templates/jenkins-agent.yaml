@@ -43,9 +43,9 @@ spec:
           <args>${computer.jnlpmac} ${computer.name}</args>
           <ttyEnabled>false</ttyEnabled>
           <resourceRequestCpu></resourceRequestCpu>
-          <resourceRequestMemory></resourceRequestMemory>
+          <resourceRequestMemory>2.5Gi</resourceRequestMemory>
           <resourceLimitCpu></resourceLimitCpu>
-          <resourceLimitMemory></resourceLimitMemory>
+          <resourceLimitMemory>2.5Gi</resourceLimitMemory>
           <envVars>
             <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
               <key>JAVA_TOOL_OPTIONS</key>
@@ -54,6 +54,18 @@ spec:
             <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
               <key>AGENT_IMAGE_VERSION</key>
               <value>{{ .Values.image.version }}</value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>JAVA_INITIAL_HEAP_PARAM</key>
+              <value>-Xms2G</value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>JAVA_MAX_HEAP_PARAM</key>
+              <value>-Xmx2G</value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>OPENSHIFT_JENKINS_JVM_ARCH</key>
+              <value>x86_64</value>
             </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
           </envVars>
           <ports/>

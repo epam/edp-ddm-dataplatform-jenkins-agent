@@ -1,6 +1,10 @@
 FROM nexus-docker-registry.apps.cicd2.mdtu-ddm.projects.epam.com/epamedp/edp-jenkins-maven-java11-agent:2.0.0
 
 USER root
+# update mirror list for centos7 (EOL has been reached)
+RUN sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/*.repo \
+    && sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/*.repo \
+    && sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/*.repo
 RUN yum update -y && yum install wget -y && yum install jq -y && rm -rf /var/lib/apt/lists/*
 ENV VERIFY_CHECKSUM=false
 ENV OC_BINARY_VERSION=4.12.0-0.okd-2023-04-16-041331
@@ -43,3 +47,6 @@ RUN mkdir $HOME/liquibase && mkdir $HOME/liquibase/lib && mkdir $HOME/service-ge
 RUN chown -R "1001:0" "$HOME" && \
     chmod -R "g+rw" "$HOME"
 USER 1001
+
+ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk \
+    PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/apache-maven-3.6.3/bin:/usr/lib/jvm/java-11-openjdk/bin
