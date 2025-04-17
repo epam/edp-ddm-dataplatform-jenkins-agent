@@ -1,4 +1,4 @@
-FROM nexus-docker-registry.apps.cicd2.mdtu-ddm.projects.epam.com/epamedp/edp-jenkins-maven-java11-agent:2.0.0
+FROM docker-registry.nexus.svc:5000/epamedp/edp-jenkins-maven-java11-agent:2.0.0
 
 USER root
 # update mirror list for centos7 (EOL has been reached)
@@ -25,10 +25,14 @@ RUN ln -s --force /usr/local/bin/helm /sbin/ && \
     ./get_helm.sh
 COPY pom.xml $HOME/pom.xml
 COPY settings.xml $HOME/settings.xml
+ARG NEXUS_URL
+ARG CI_USERNAME
+ARG CI_PASSWORD
+
 RUN mkdir $HOME/liquibase && mkdir $HOME/liquibase/lib && mkdir $HOME/service-generation-utility && \
     mkdir $HOME/report-publisher && mkdir $HOME/notification-template-publisher && mkdir $HOME/geoserver-publisher \
     mkdir $HOME/registry-regulations-cli && mkdir $HOME/camunda-auth-cli && mkdir $HOME/form-data-storage-migration-cli && \
-    mvn -f $HOME/pom.xml --settings $HOME/settings.xml -Dartifactory.baseUrl=http://nexus:8081/nexus -Dartifactory.groupPath=edp-maven-group -Dartifactory.releasePath=edp-maven-releases -Dartifactory.snapshotsPath=edp-maven-snapshots dependency:copy-dependencies && \
+    mvn -f $HOME/pom.xml --settings $HOME/settings.xml -Dartifactory.username=$CI_USERNAME -Dartifactory.password=$CI_PASSWORD -Dartifactory.baseUrl=$NEXUS_URL -Dartifactory.groupPath=edp-maven-group -Dartifactory.releasePath=edp-maven-releases -Dartifactory.snapshotsPath=edp-maven-snapshots dependency:copy-dependencies && \
     cp $HOME/target/dependency/liquibase-ddm-ext*.jar $HOME/liquibase/lib/liquibase-ddm-ext.jar && \
     cp $HOME/target/dependency/liquibaserepo*.tar.gz /liquibaserepo-0.0.1.tar.gz && \
     tar -xf /liquibaserepo-0.0.1.tar.gz -C / && \
